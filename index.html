@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Meine App</title>
+    <link rel="Stylesheet" href="style.css" />
+</head>
+<body>
+    <!--<audio src="sounds/music.mp3" type="audio/mpeg" autoplay loop></audio>-->
+    <div id="levelbar">
+        <div id="green"></div>
+        <div id="leveltext">Level 1</div>
+    </div>
+	<div id="clouds" style="position:fixed;width: 100%;height: 100%;float:left;top: 0px;margin-top:0px;">
+        <img id="cloud0" src="images/background/cloud1.png" style="margin-left: 100px;" /><br />
+        <img id="cloud1" src="images/background/cloud2.png" style="margin-left: 440px;" /><br />
+        <img id="cloud2" src="images/background/cloud3.png" style="margin-left: 280px;" /><br />
+    </div>
+    <div id="title">
+        <span id="candies">0</span> Candies<br />
+        <span id="subtitle"><span id="cps">0</span> CPS</span>
+    </div>
+    <div id="lollipop">
+        <img id="lolli_gfx" width="100%" src="images/lollipop.png" />
+    </div>
+    <table id="menu">
+        <tr>
+            <td style="text-align: left">
+                <img id="stats" src="images/icons/stats.png">
+            </td>
+            <td style="text-align: right">
+                <img id="build" src="images/icons/build.png">
+            </td>
+        </tr>
+    </table>
+    <div id="window" hidden>
+        <div id="buildWindow">
+            <div id="" class="title">Build</div>
+            <div id="buildWindowTabs">
+            
+			</div>
+        </div>
+        
+        <div id="statsWindow">
+            <div class="title">Menu</div>
+            Candy Clicker v0.1<br />
+            This is free software. You can get the sourcecode <a target="_blank" href="https://github.com/AtrocDevelopment/candyclicker">here</a>.<br />
+            Have fun. :)
+        </div>
+    </div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/graphics.js"></script>
+    <script src="scripts/game.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>main()</script>
+</body>
+</html>
